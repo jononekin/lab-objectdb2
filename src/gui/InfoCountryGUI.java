@@ -125,6 +125,7 @@ public class InfoCountryGUI extends JFrame {
 		btnMoreInfopred = new JButton("More info (pred & neighbors)");
 		btnMoreInfopred.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				textArea.setText("");
 				if (pr!=null) {
 					textArea.append("Previous president: "+pr.getPreceededBy()+"\n");
 				}
